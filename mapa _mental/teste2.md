@@ -2,7 +2,7 @@
 
 ### Salvar alterações: ###
 
-[ordem de comandos](img/github1.jpg)
+<img href ="img/github1.jpg"> 
 
 ### Novo repositório: ###
 
