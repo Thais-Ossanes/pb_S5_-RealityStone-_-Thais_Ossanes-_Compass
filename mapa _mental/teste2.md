@@ -2,7 +2,7 @@
 
 ### Salvar alterações: ###
 
-<img href ="img/github1.jpg"> 
+<img href = "img/github1.jpg"> 
 
 ### Novo repositório: ###
 
