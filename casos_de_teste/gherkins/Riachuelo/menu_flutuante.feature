@@ -12,7 +12,7 @@ PARA poder filtrar uma categoria de acordo com necessidade
 
     Contexto: Estar no home
         Dado que esteja no home
-        Quando passar o cursor por 1 menu
+        Quando passar o cursor por 1 categoria
        # E clicar
 
     Cenário: Passar o cursor pela categoria
@@ -44,5 +44,14 @@ PARA poder filtrar uma categoria de acordo com necessidade
         Então deverá aparecer o ícone de uma seta
 
 #CATEGORIAS ESPECÍFICAS -----
-    Cenário: Categorias que não possuem menus flutuantes
-    Então deverá permanecer sem abrir menu flutuante
+    Esquema do Cenário: Categorias que não abrem menu flutuante
+    Então a "<categoria>" deverá permanecer sem abrir menu flutuante
+
+    Exemplos: 
+
+    |   categoria  |
+    | Novidades    |
+    | Personagens  |
+    | Outlet       |
+
+#usar cenários quando forem problemas diferentes e esquema de cenário quando forem vários problemas iguais  
