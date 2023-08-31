@@ -1,0 +1,8 @@
+#NOTE: criando perfis de execução diferentes
+# '-p' define um parâmtro que pode ser chamado no cmder
+default: -p prd
+default_hml: -p hml
+
+# enviroments
+hml: ENVIRONMENT="hml"
+prd: ENVIROMENT="prd"
