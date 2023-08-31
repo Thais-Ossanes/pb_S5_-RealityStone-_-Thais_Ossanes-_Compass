@@ -5,4 +5,4 @@ default_hml: -p hml
 
 # enviroments
 hml: ENVIRONMENT="hml"
-prd: ENVIROMENT="prd"
+prd: ENVIRONMENT="prd"
