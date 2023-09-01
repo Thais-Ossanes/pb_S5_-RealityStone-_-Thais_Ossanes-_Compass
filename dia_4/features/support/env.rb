@@ -20,19 +20,7 @@ URL = ENVIRONMENT_CONFIG['url']
  #   caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {"args" => ["--incognito"]})
   #  options = {browser: :chrome, desired_capabilities: caps}
    # Capybara::Selenium::Driver.new(app, options)
-
-#end
-Capybara.register_driver :my_chrome do |app|
-  options = {
-    browser: :chrome,
-    desired_capabilities: {
-      'goog:chromeOptions' => {
-        args: ['--incognito']
-      }
-    }
-  }
-  Capybara::Selenium::Driver.new(app, options)
-end
+#end 
 
 # essa forma acima acusa um erro, que a maioria dos colegas teve tabém:   
       #Dado que acesse a home # features/step_definitions/google.rb:3
@@ -40,6 +28,22 @@ end
       #./features/support/env.rb:20:in `block in <top (required)>'
       #./features/step_definitions/google.rb:6:in `"que acesse a home"'
       #features/specs/google.feature:6:in `que acesse a home'
+
+#NOTE: forma abaixo desenvolvida pelo colega Gian, e explicada em uma daily
+#não consegui resolver de outra maneira
+Capybara.register_driver :my_chrome do |app|
+  options = Selenium::WebDriver::Chrome::Options.new
+  options.add_argument('--incognito')
+  options.add_argument('--start-maximized')
+  options.add_argument('--window-size-1420-835')
+
+  if ENV['HEADLESS']
+    options.add_argument('--headless')
+  end
+
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+end
+#---------------------------------------------------------------------------
 
 Capybara.default_driver = :my_chrome
 Capybara.app_host = URL
