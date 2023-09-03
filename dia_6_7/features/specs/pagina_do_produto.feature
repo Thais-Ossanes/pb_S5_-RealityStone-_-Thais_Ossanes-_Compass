@@ -15,12 +15,12 @@ Funcionalidade: OurProducts
 @product_change_color
     Cenário: Trocar a cor do produto    
         Quando alterar a cor do produto
-        Então deverá alterar a imagem aoresentada na OurProducts
+        Então deverá alterar a imagem apresentada na PDP
 
 @increase_product_quantity
     Cenário: Aumentar a quantidade de produtos no carrinho 
         Quando aumentar a quantidadede produto
-        Então deverá alterar a quantidade exibida na OurProducts
+        Então deverá alterar a quantidade exibida na PDP
 
 
 @increase_product_quantity

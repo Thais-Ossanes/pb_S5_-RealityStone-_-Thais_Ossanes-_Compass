@@ -13,9 +13,9 @@ Funcionalidade: Busca
 @search_for_product
     Cenário: Buscar por um produto existente
         Quando realizar uma busca por um produto existente
-        Então deverão ser retornado resultados na busca 
+        Então deverão ser retornados resultados na busca 
 
-@search_product_available
+@search_for_different_products
     Esquema do Cenário: Buscar por produtos existentes
         Quando buscar pelo produto "<produto>"
         Então deverão ser retornados resultados na busca
