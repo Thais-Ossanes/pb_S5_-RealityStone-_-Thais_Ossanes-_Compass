@@ -1,0 +1,14 @@
+#NOTE: criando perfis de execução diferentes
+# '-p' define um parâmtro que pode ser chamado no cmder
+default: -p prd -p chrome
+default_hml: -p hml p chrome
+
+# enviroments
+hml: ENVIRONMENT="hml"
+prd: ENVIRONMENT="prd"
+
+#browsers
+chrome: BROWSER="chrome"
+
+#visual mode
+headless: HEADLESS="true"
