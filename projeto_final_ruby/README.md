@@ -106,7 +106,7 @@ bundle exec cucumber -p default -t@contact_ok ```
 * [Site Prism]('https://github.com/site-prism/site_prism')
 * [Reports Cucumber]('https://cucumber.io/docs/cucumber/reporting/?lang=java')
 * [Automação em BDD]('https://automationpanda.com/bdd/')
-* [Git]('https://git-scm.com/e')
+* [Git] ('https://git-scm.com/e')
 
 ## Sites que Podem te Ajudar ##
 
