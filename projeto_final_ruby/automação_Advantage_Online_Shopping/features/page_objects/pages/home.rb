@@ -3,7 +3,7 @@ require_relative '../sections/header.rb'
 module Pages 
    class Home < SitePrism::Page
         set_url '/'
-        element :loader, 'body > .loader' #automação n esta funcionando por conta desse loader
+        element :loader, 'body > .loader' #loader solucionado
         section :header, Sections::Header, 'header'
         element :input_email_contact_us, 'input[name="emailContactUs"]'
         element :input_message_contact_us, 'textarea[name="subjectTextareaContactUs"]'
@@ -15,10 +15,9 @@ module Pages
             #header.btn_open_search.click
             #header.input_search.set product 
             header.click_and_input_text_for_search(product)
-            wait_until_loader_visible#(wait: 2) ele espera no máximo 2s pelo loader
+            wait_until_loader_visible #(wait: 2) ele espera no máximo 2s pelo loader
             wait_until_loader_invisible
         
-            #NOTE: está com problema de carregamento então não clica de novo na lupa pq a tela fica carregando, esotu clicando manualmente
             header.btn_open_search.click
             header.close_serch.click
 

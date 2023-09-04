@@ -1,6 +1,6 @@
 module Factory
     class Static
-        def self.load_file #método q define que a massa de dados vai capturar os aruivos
+        def self.load_file #método q define que a massa de dados vai capturar os arquivos
             YAML.load_file(File.dirname(__FILE__) + "/static/#{ENVIRONMENT}.yml")
         end
 

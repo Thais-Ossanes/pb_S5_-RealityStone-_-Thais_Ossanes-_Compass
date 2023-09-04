@@ -23,8 +23,8 @@ Funcionalidade: OurProducts
         Então deverá alterar a quantidade exibida na PDP
 
 
-@increase_product_quantity
-   Cenário: Aumentar a quantidade do produto na OurProducts aumenta no carrinho
+@increase_product_quantity_to_cart
+   Cenário: Aumentar a quantidade do produto na PDP aumenta no carrinho
         Quando aumentar  a quantidade de produtos
         E adicionar ao carrinho
         Então o produto deverá ser adicionado com a quantidade aumentada

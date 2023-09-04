@@ -1,11 +1,9 @@
-#NOTE: criando perfis de execução diferentes
-# '-p' define um parâmtro que pode ser chamado no cmder
+
 default: --format pretty -p prd -p chrome -p html
 default_hml: -p hml p chrome
 
 #Reporters
 html: --format html --out=reports/report.html
-
 
 # enviroments
 hml: ENVIRONMENT="hml"

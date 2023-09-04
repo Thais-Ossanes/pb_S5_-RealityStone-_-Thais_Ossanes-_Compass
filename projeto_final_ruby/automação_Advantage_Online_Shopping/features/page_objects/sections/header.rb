@@ -7,7 +7,6 @@ module Sections
         def click_and_input_text_for_search(text)
             btn_open_search.click
             input_search.set text 
-
         end
 
     end

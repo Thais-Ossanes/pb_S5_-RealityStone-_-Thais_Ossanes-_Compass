@@ -10,3 +10,5 @@ Está localizado o mapa mental das funcionalidades automatizadas e um escopo ini
 
 ### ↳ Clonando Todo o Repositório
 
+Clique em <code> e depois **download .zip**, após ter baixado é só extrair no local de sua preferência.
+![Exemplo](z_escopo_plano_de_testes/mapa_mental/baixando.jpg)
