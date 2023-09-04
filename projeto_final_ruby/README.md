@@ -99,7 +99,8 @@ bundle exec cucumber -p default -t@contact_ok ```
 
 ## Documentação ##
 
-*  [Chrome Driver]('https://chromedriver.chromium.org') ➝ [Capabilities]('https://chromedriver.chromium.org/')
+[Chrome Driver]('https://chromedriver.chromium.org') ➝ [Capabilities]('https://chromedriver.chromium.org/')
+
 * [Capybara]('https://github.com/teamcapybara/capybara')
 * [Ruby Faker]('https://github.com/faker-ruby/faker')
 * [Site Prism]('https://github.com/site-prism/site_prism')
